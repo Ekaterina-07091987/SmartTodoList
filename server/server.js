@@ -94,6 +94,6 @@ app.use((req, res) => {
   res.status(404).json({ error: "Маршрут не найден" });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Сервер запущен: http://localhost:${PORT}`);
 });
